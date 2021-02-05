@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Core4/landing/static/css/main.7fe57ab2.chunk.css",
+    "main.js": "/Core4/landing/static/js/main.a5399069.chunk.js",
+    "main.js.map": "/Core4/landing/static/js/main.a5399069.chunk.js.map",
+    "runtime-main.js": "/Core4/landing/static/js/runtime-main.efcfca67.js",
+    "runtime-main.js.map": "/Core4/landing/static/js/runtime-main.efcfca67.js.map",
+    "static/js/2.29fb2669.chunk.js": "/Core4/landing/static/js/2.29fb2669.chunk.js",
+    "static/js/2.29fb2669.chunk.js.map": "/Core4/landing/static/js/2.29fb2669.chunk.js.map",
+    "static/js/3.1dfe1735.chunk.js": "/Core4/landing/static/js/3.1dfe1735.chunk.js",
+    "static/js/3.1dfe1735.chunk.js.map": "/Core4/landing/static/js/3.1dfe1735.chunk.js.map",
+    "index.html": "/Core4/landing/index.html",
+    "static/css/main.7fe57ab2.chunk.css.map": "/Core4/landing/static/css/main.7fe57ab2.chunk.css.map",
+    "static/js/2.29fb2669.chunk.js.LICENSE.txt": "/Core4/landing/static/js/2.29fb2669.chunk.js.LICENSE.txt",
+    "static/media/all.min.css": "/Core4/landing/static/media/fa-solid-900.46fdbd2d.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.efcfca67.js",
+    "static/js/2.29fb2669.chunk.js",
+    "static/css/main.7fe57ab2.chunk.css",
+    "static/js/main.a5399069.chunk.js"
+  ]
+}
