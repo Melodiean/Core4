@@ -1,104 +1,108 @@
-import React, { useState } from "react";
-import "../App.css";
+import React, { Component } from "react";
+import '../App.css';
 
-function Day(props) {
-  const dates = {
-    day: new Date().getDay(),
-    dat: new Date().getDate(),
-    month: new Date().getMonth(),
-  };
-
-  const [data, setData] = useState(dates);
-
-  if (data.day === 0) {
-    setData({ day: "SUN" });
-  }
-  if (data.day === 1) {
-    setData({ day: "MON" });
-  }
-  if (data.day === 2) {
-    setData({ day: "TUE" });
-  }
-  if (data.day === 3) {
-    setData({ day: "WED" });
-  }
-  if (data.day === 4) {
-    setData({ day: "THU" });
-  }
-  if (data.day === 5) {
-    setData({ day: "FRI" });
-  }
-  if (data.day === 6) {
-    setData({ day: "SAT" });
+class Day extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      day: new Date().getDay(),
+      dat: new Date().getDate(),
+      month: new Date().getMonth(),
+    };
   }
 
-  let months = [
-    "JAN",
-    "FEB",
-    "MAR",
-    "APR",
-    "MAY",
-    "JUN",
-    "JUL",
-    "AUG",
-    "SEP",
-    "OCT",
-    "NOV",
-    "DEC",
-  ];
+  render() {
+    if (this.state.day === 0) {
+      this.setState({ day: "SUN" });
+    }
+    if (this.state.day === 1) {
+      this.setState({ day: "MON" });
+    }
+    if (this.state.day === 2) {
+      this.setState({ day: "TUE" });
+    }
+    if (this.state.day === 3) {
+      this.setState({ day: "WED" });
+    }
+    if (this.state.day === 4) {
+      this.setState({ day: "THU" });
+    }
+    if (this.state.day === 5) {
+      this.setState({ day: "FRI" });
+    }
+    if (this.state.day === 6) {
+      this.setState({ day: "SAT" });
+    }
 
-  if (data.month === 0) {
-    setData({ month: months[0] });
-  }
+    let months = [
+      "JAN",
+      "FEB",
+      "MAR",
+      "APR",
+      "MAY",
+      "JUN",
+      "JUL",
+      "AUG",
+      "SEP",
+      "OCT",
+      "NOV",
+      "DEC",
+    ];
 
-  if (data.month === 1) {
-    setData({ month: months[1] });
-  }
+    // let getMonth = months[month]
 
-  if (data.month === 2) {
-    setData({ month: months[2] });
-  }
+    if (this.state.month === 0) {
+      this.setState({ month: months[0] });
+    }
 
-  if (data.month === 3) {
-    setData({ month: months[3] });
-  }
+    if (this.state.month === 1) {
+      this.setState({ month: months[1] });
+    }
 
-  if (data.month === 4) {
-    setData({ month: months[4] });
-  }
+    if (this.state.month === 2) {
+      this.setState({ month: months[2] });
+    }
 
-  if (data.month === 5) {
-    setData({ month: months[5] });
-  }
+    if (this.state.month === 3) {
+      this.setState({ month: months[3] });
+    }
 
-  if (data.month === 6) {
-    setData({ month: months[6] });
-  }
+    if (this.state.month === 4) {
+      this.setState({ month: months[4] });
+    }
 
-  if (data.month === 7) {
-    setData({ month: months[7] });
-  }
+    if (this.state.month === 5) {
+      this.setState({ month: months[5] });
+    }
 
-  if (data.month === 8) {
-    setData({ month: months[8] });
-  }
+    if (this.state.month === 6) {
+      this.setState({ month: months[6] });
+    }
 
-  if (data.month === 9) {
-    setData({ month: months[9] });
-  }
-  if (data.month === 10) {
-    setData({ month: months[10] });
-  }
+    if (this.state.month === 7) {
+      this.setState({ month: months[7] });
+    }
 
-  if (data.month === 11) {
-    setData({ month: months[11] });
-  }
+    if (this.state.month === 8) {
+      this.setState({ month: months[8] });
+    }
 
-  return (
-    <div className="day">
-      {data.day} {data.dat} {data.month}
-    </div>
-  );
+    if (this.state.month === 9) {
+      this.setState({ month: months[9] });
+    }
+    if (this.state.month === 10) {
+      this.setState({ month: months[10] });
+    }
+
+    if (this.state.month === 11) {
+      this.setState({ month: months[11] });
+    }
+
+    return (
+      <div className='day'>
+        {this.state.day} {this.state.dat} {this.state.month}
+      </div>
+    );
+  }
 }
-
 export default Day;
