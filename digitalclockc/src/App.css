@@ -1,0 +1,47 @@
+body {
+  background-image: url("./images/wall.jpg"); 
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.clock {
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 15px;
+  background-color: rgba(77, 75, 2, 0.685);
+  box-shadow: inset 3px 3px 20px 0 rgba(26, 24, 1, 0.507), 
+  inset 0px -1px 20px 0 #353829a1,
+  1px 1px 5px 0 black,
+   -1px -1px 5px 0 rgb(250, 250, 255);
+   font-family: monospace;
+  font-size: 5rem;
+  padding: 0.5em;
+  margin: 5%;
+  max-width: 400px;
+}
+h1 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3em;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+}
+
+.day {
+  color: white;
+  font-size: 0.2em;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: 5px dashed;
+}
+
+/* Image by <a href="https://pixabay.com/users/bongkarngraphic-16126984/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5066288">Bongkarn Thanyakij</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5066288">Pixabay</a> */
