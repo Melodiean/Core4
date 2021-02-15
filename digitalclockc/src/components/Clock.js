@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "../App.css";
-import Day from './Day';
+import Day from "./Day";
 
 class Clock extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: new Date()
+      date: new Date(),
     };
   }
   componentDidMount() {
@@ -18,11 +18,11 @@ class Clock extends Component {
   render() {
     return (
       <div className="clock">
-          <div className='timer'>{this.state.date.toLocaleTimeString()}
-          
-          <Day /> 
-          </div>
-          
+        <div className="timer">
+          {this.state.date.toLocaleTimeString()}
+
+          <Day />
+        </div>
       </div>
     );
   }
