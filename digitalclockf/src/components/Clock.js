@@ -1,26 +1,37 @@
 import React, { useState, useEffect } from "react";
 import "../App.css";
-import Day from "./Day";
 
-function Clock(props) {
-  const [date, setDate] = useState(new Date());
+function Clock() {
+  const dateInfo = {
+    time: new Date().toLocaleTimeString(),
+    date: new Date().toDateString(),
+  };
+  const [dateTime, setDate] = useState(dateInfo);
 
   useEffect(() => {
     // effect
-    const timer = setInterval(() => setDate({ date: new Date() }), 1000);
+    const timer = setInterval(
+      () =>
+        setDate({
+          dateTime: {
+            time: new Date().toLocaleTimeString(),
+            date: new Date().toLocaleDateString(),
+          },
+        }),
+      1000
+    );
 
     return () => {
-      // cleanup
+      // cleanup()
       clearInterval(timer);
     };
-  }, []);
+  }, [dateTime]);
 
   return (
     <div className="clock">
       <div className="timer">
-        {date.toLocaleTimeString()}
-
-        <Day />
+        {dateInfo.time}
+        <div className="day">{dateInfo.date}</div>
       </div>
     </div>
   );

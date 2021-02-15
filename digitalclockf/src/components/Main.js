@@ -5,7 +5,7 @@ import '../App.css';
 function Main(){
     return (
        <div className='App'>
-           <Title title="Digital Clock" />
+           <Title greeting="Hello" title="User" />
            <Clock clock="ClockData" />
        </div>
     )
