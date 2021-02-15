@@ -23,7 +23,6 @@ const Locate = () => {
     return (
       <div>
         {info.errMsg}
-        {/* {console.log("err")} */}
       </div>
     );
   }
@@ -33,14 +32,12 @@ const Locate = () => {
       <div className="Lheader">
         <p>Latitude: {info.latitude}</p>
         <p>Longitude: {info.longitude}</p>
-        {/* {console.log("location")} */}
       </div>
     );
   }
 
   return <div>Loading...</div>;
 
-  // return <div>Error: {info.errMsg}</div>
 };
 
 export default Locate;

@@ -9,9 +9,6 @@ class App extends Component {
     this.state = {
       value: 0,
     };
-
-    // this.increment = this.increment.bind(this)
-    // this.decrement = this.decrement.bind(this)
   }
 
   increment = () => {
