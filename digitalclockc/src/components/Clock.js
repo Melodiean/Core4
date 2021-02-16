@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../App.css";
-import Day from "./Day";
 
 class Clock extends Component {
   constructor(props) {
@@ -21,7 +20,7 @@ class Clock extends Component {
         <div className="timer">
           {this.state.date.toLocaleTimeString()}
 
-          <Day />
+          <div className="day">{this.state.date.toDateString()}</div>
         </div>
       </div>
     );

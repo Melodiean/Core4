@@ -11,24 +11,25 @@ class App extends Component {
     };
   }
 
-  increment = () => {
-    this.setState({
-      value: this.state.value + 1,
-    });
-  };
-
-  decrement = () => {
-    if (this.state.value <= 0) {
+  componentDidMount() {
+    this.increment = () => {
       this.setState({
-        value: 0,
+        value: this.state.value + 1,
       });
-    } else {
-      this.setState({
-        value: this.state.value - 1,
-      });
-    }
-  };
+    };
 
+    this.decrement = () => {
+      if (this.state.value <= 0) {
+        this.setState({
+          value: 0,
+        });
+      } else {
+        this.setState({
+          value: this.state.value - 1,
+        });
+      }
+    };
+  }
   render() {
     return (
       <div className="App">
