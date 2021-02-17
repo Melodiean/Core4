@@ -14,4 +14,5 @@
 * DieRoll
 * Landing Page
 * DigitalClock
+* ColorGenerator (React app from scratch)
 
