@@ -81,12 +81,12 @@ function Colorize() {
         <input
           type="submit"
           value="SUBMIT"
-          style={{
-            backgroundColor: "black",
-            color: "white",
-            border: "none",
-          }}
-        />
+          // style={{
+          //   backgroundColor: "black",
+            // color: "white",
+          //   border: "none",
+          // }}
+        className="btn-large waves-effect waves-light" />
       </form>
       <div
         style={{

@@ -16,6 +16,10 @@ form input {
   border-radius: 8px;
 }
 
+form input[type="submit"]{
+  color:white;
+}
+
 .colorize {
   width: 55vw;
   height: 7vh;
