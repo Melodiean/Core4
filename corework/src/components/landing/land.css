@@ -1,0 +1,82 @@
+.fa {
+  color: rgba(248, 22, 116, 0.7);
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #282c34;
+  color: white;
+}
+
+.card,
+.contact {
+  position: relative;
+}
+
+.card {
+  top: 115px;
+  padding: 5px;
+}
+
+.card:nth-child(2),
+.card:nth-child(4) {
+  background-color: rgba(202, 200, 202, 0.329);
+}
+
+.contact {
+  top: 110px;
+}
+
+.formStyles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Linput,
+.Ltextarea,
+.Lbutton {
+  margin: 3px;
+  width: 50vw;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 0 silver, -1px -1px 3px 0 silver;
+}
+
+.Linput,
+.Ltextarea {
+  height: 7vh;
+}
+
+.Lbutton {
+  background-color: #282c34;
+  color: white;
+  width: 20vw;
+  padding: 5px;
+}
+
+footer i {
+  margin: 2px;
+}
+
+.footer {
+  position: relative;
+  top: 130px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(192, 192, 192, 0.268);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: baseline;
+}
+
+footer div {
+  margin: 3px;
+}
