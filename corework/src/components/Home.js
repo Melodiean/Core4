@@ -17,8 +17,6 @@ function Home() {
         <li>Lifecycle Methods</li>
         <li>Routers</li>
       </ul>
-
-      <h1>MINI PROJECTS</h1>
       <Projects />
       <Footer />
     </div>

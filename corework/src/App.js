@@ -5,6 +5,7 @@ import Todo from "./components/Todo";
 import Digiclockc from "./components/Digiclockc";
 import Digiclockf from "./components/Digiclockf";
 import Dieroll from "./components/Dieroll";
+// import Footer from "./components/Footer"
 import "./App.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Digiclockf" component={Digiclockf} />
         <Route path="/Dieroll" component={Dieroll} />
       </Switch>
+      {/* <Footer /> */}
     </div>
   );
 }
