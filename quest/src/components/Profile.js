@@ -4,25 +4,25 @@ import React, { useState, useEffect } from 'react'
 function Profile(){
 
     const [profileState, setProfileState] = useState({
-        loading: false,
-        qns: null,
+        isLogged: false,
+        userI: null,
       });
     
       useEffect(() => {
-        setProfileState({ loading: true });
+        setProfileState({ isLogged: true });
     
         const apiUrl = "https://devquestapi.herokuapp.com/api/v1/auth/profile";
     
         fetch(apiUrl)
           .then((res) => res.json())
-          .then((qns) => {
-            setProfileState({ loading: false, qns: qns });
+          .then((doc) => {
+            setProfileState({ isLogged: false, userI: doc });
           })
           .catch((er) => console.log(er));
       }, [setProfileState]);
 
     return (
-        <div></div>
+        <div isLogged={profileState.loading} userI={profileState.userI}></div>
     )
 }
 
